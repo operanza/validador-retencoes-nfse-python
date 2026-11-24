@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "validador-retencoes-nfse"
+version = "0.1.0"
+description = "Conferência técnica de retenções tributárias (ISS, IRRF, PIS, COFINS, CSLL, INSS) em NFS-e usando apenas a biblioteca padrão do Python."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Operanza", email = "contato@operanza.com.br" },
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+]
+
+[project.scripts]
+validador-nfse = "validador_nfse.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["validador_nfse*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

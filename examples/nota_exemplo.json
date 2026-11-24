@@ -1,0 +1,14 @@
+{
+  "valor_servicos": "2500.00",
+  "deducoes": "0.00",
+  "aliquota_iss": "5.00",
+  "iss_retido": true,
+  "optante_simples": false,
+  "inss_aplicavel": false,
+  "valor_iss": "125.00",
+  "valor_irrf": "37.50",
+  "valor_pis": "16.25",
+  "valor_cofins": "75.00",
+  "valor_csll": "25.00",
+  "valor_inss": "0.00"
+}
